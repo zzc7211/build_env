@@ -1,5 +1,8 @@
 FROM ubuntu:16.04
 ADD . /ENV
 WORKDIR /ENV
+RUN echo ------------
+RUN pwd
+RUN echo ------------
 RUN ls -la
-RUN ./ENV/init_env.sh
+RUN ./init_env.sh
