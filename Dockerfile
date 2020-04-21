@@ -1,4 +1,5 @@
 FROM ubuntu:16.04
-ADD . /data
-WORKDIR /data
-RUN ./data/init_env.sh
+ADD . /ENV
+WORKDIR /ENV
+RUN ls -la
+RUN ./ENV/init_env.sh
